@@ -1,0 +1,30 @@
+[20-Jan-2013 00:07:09 America/Bogota] PHP Warning:  include_once(/home6/napsdtco/public_html/juan2ramos/views/layout/default/header.php): failed to open stream: No such file or directory in /home6/napsdtco/public_html/juan2ramos/application/View.php on line 77
+[20-Jan-2013 00:07:09 America/Bogota] PHP Warning:  include_once(): Failed opening '/home6/napsdtco/public_html/juan2ramos/views/layout/default/header.php' for inclusion (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home6/napsdtco/public_html/juan2ramos/application/View.php on line 77
+[27-Jan-2013 19:00:05 America/Bogota] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'napsdtco_urbana'@'localhost' to database 'napsdtco_urban' in /home6/napsdtco/public_html/urbana/application/Database.php on line 57
+[27-Jan-2013 19:00:05 America/Bogota] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home6/napsdtco/public_html/urbana/application/Database.php on line 65
+[27-Jan-2013 19:00:05 America/Bogota] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home6/napsdtco/public_html/urbana/application/Database.php on line 86
+[27-Jan-2013 19:00:05 America/Bogota] PHP Warning:  Invalid argument supplied for foreach() in /home6/napsdtco/public_html/urbana/models/MenuModel.php on line 49
+[03-Feb-2013 21:21:42 America/Bogota] PHP Warning:  include_once(/home6/napsdtco/public_html/urbana/views/index/index.phtml): failed to open stream: No such file or directory in /home6/napsdtco/public_html/urbana/application/View.php on line 80
+[03-Feb-2013 21:21:42 America/Bogota] PHP Warning:  include_once(): Failed opening '/home6/napsdtco/public_html/urbana/views/index/index.phtml' for inclusion (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home6/napsdtco/public_html/urbana/application/View.php on line 80
+[18-Feb-2013 15:45:14 America/Bogota] PHP Notice:  Undefined index: img in /home6/napsdtco/public_html/urbana/views/index/index.phtml on line 10
+[18-Feb-2013 15:47:55 America/Bogota] PHP Notice:  Undefined variable: ruta in /home6/napsdtco/public_html/urbana/application/View.php on line 34
+[18-Feb-2013 15:47:56 America/Bogota] PHP Notice:  Undefined variable: ruta in /home6/napsdtco/public_html/urbana/application/View.php on line 34
+[18-Feb-2013 17:01:21 America/Bogota] PHP Notice:  Undefined property: View::$rutaLayout in /home6/napsdtco/public_html/urbana/views/index/index.phtml on line 12
+[18-Feb-2013 17:20:55 America/Bogota] PHP Notice:  Undefined variable: archivos in /home6/napsdtco/public_html/urbana/views/index/index.phtml on line 14
+[18-Feb-2013 17:20:58 America/Bogota] PHP Notice:  Undefined variable: archivos in /home6/napsdtco/public_html/urbana/views/index/index.phtml on line 14
+[18-Feb-2013 17:21:35 America/Bogota] PHP Notice:  Undefined variable: archivos in /home6/napsdtco/public_html/urbana/views/index/index.phtml on line 14
+[25-Feb-2013 21:59:14 America/Bogota] PHP Notice:  Undefined variable: cadenados in /home6/napsdtco/public_html/urbana/application/Request.php on line 29
+[25-Feb-2013 21:59:16 America/Bogota] PHP Notice:  Undefined variable: cadenados in /home6/napsdtco/public_html/urbana/application/Request.php on line 29
+[25-Feb-2013 21:59:17 America/Bogota] PHP Notice:  Undefined variable: cadenados in /home6/napsdtco/public_html/urbana/application/Request.php on line 29
+[25-Feb-2013 21:59:17 America/Bogota] PHP Notice:  Undefined variable: cadenados in /home6/napsdtco/public_html/urbana/application/Request.php on line 29
+[25-Feb-2013 22:03:56 America/Bogota] PHP Warning:  require_once(/home6/napsdtco/public_html/urbana/application/Request.php): failed to open stream: No such file or directory in /home6/napsdtco/public_html/urbana/index.php on line 34
+[25-Feb-2013 22:03:56 America/Bogota] PHP Fatal error:  require_once(): Failed opening required '/home6/napsdtco/public_html/urbana/application/Request.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home6/napsdtco/public_html/urbana/index.php on line 34
+[25-Feb-2013 22:09:22 America/Bogota] PHP Warning:  require_once(/home6/napsdtco/public_html/urbana/application/Request.php): failed to open stream: No such file or directory in /home6/napsdtco/public_html/urbana/index.php on line 34
+[25-Feb-2013 22:09:22 America/Bogota] PHP Fatal error:  require_once(): Failed opening required '/home6/napsdtco/public_html/urbana/application/Request.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home6/napsdtco/public_html/urbana/index.php on line 34
+[25-Feb-2013 22:19:30 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:19:32 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:19:33 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:20:13 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:20:15 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:20:20 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49
+[25-Feb-2013 22:20:44 America/Bogota] PHP Fatal error:  Class 'nuestrafirmaController' not found in /home6/napsdtco/public_html/urbana/application/Bootstrap.php on line 49

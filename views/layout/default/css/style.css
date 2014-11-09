@@ -1,0 +1,421 @@
+
+/* ---------->>> RESET <<<------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+strong, b {
+    font-weight: bold;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---------->>> FONTS <<<------------*/    
+@font-face {
+    font-family: 'Conv_HelveticaNeueLTPro-Lt';
+    src: url('fonts/HelveticaNeueLTPro-Lt.eot');
+    src: local('☺'), url('fonts/HelveticaNeueLTPro-Lt.woff') format('woff'), url('fonts/HelveticaNeueLTPro-Lt.ttf') format('truetype'), url('fonts/HelveticaNeueLTPro-Lt.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------->>> body 16px = 12pt = 100% = 1em <<<------------*/
+
+body{
+    background: #313131; 
+    font-family:'Conv_HelveticaNeueLTPro-Lt',Sans-Serif;
+}
+
+/* ---------->>> Navegacion <<<------------*/
+
+
+nav{
+
+    border-radius: 0.3em;
+    clear: both;
+    font-family:'Conv_HelveticaNeueLTPro-Lt',Sans-Serif;
+    font-weight: 700;
+    overflow: auto;
+    -moz-box-shadow:inset 0px 0px 8px #000000;
+    -webkit-box-shadow:inset 0px 0px 8px #000000;
+    box-shadow:inset 0px 0px 8px #000000;
+
+}
+
+nav > ul {
+    margin: 0 auto;
+}
+.nav > li {
+    float:left;
+}
+nav li a {     
+    box-sizing:border-box;
+    color: #FDFDFD;
+    display:block;
+    font-family:'Conv_HelveticaNeueLTPro-Lt',Sans-Serif;
+    font-size: 13px;
+    padding:6px;  
+
+
+}
+nav li {
+    border-right:  1px groove #555;  
+}
+nav li a:hover {
+    color:#ed1c25
+}
+
+ul li:last-child
+{
+    border: none
+}
+
+nav li ul {
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display:none;
+    position:absolute;
+    min-width:140px;
+    z-index: 1
+
+}
+nav li:hover > ul {
+    display:block;
+}
+nav li ul li {
+    position:relative;
+}
+
+nav li ul li ul {
+    left:-140px;
+    top:0;
+}
+nav li .flecha{
+    font-size: 9px;
+    padding-left: 6px;
+    display: none;
+}
+nav li a:not(:last-child) .flecha {
+    display: inline;
+}
+.selected{
+    color: #F00 !important;   
+}
+
+/* ---------->>> header nav footer <<<------------*/
+
+header, nav{
+    background: #1b191a;
+    max-width: 100%;
+    padding: 0.25em;
+    text-align: center;
+}
+
+/* ---------->>> header <<<------------*/
+header{
+
+    background: #3a3a3a; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #3a3a3a 0%, #231f20 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3a3a3a), color-stop(100%,#231f20)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #3a3a3a 0%,#231f20 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #3a3a3a 0%,#231f20 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #3a3a3a 0%,#231f20 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #3a3a3a 0%,#231f20 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#231f20',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-sizing: border-box; 
+    margin: 0;
+    max-width: 100%;
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 7px 11px rgba(60, 60, 60, 0.80);
+    -moz-box-shadow: 1px 7px 11px rgba(60, 60, 60, 0.80);
+    -webkit-box-shadow: 1px 7px 11px rgba(60, 60, 60, 0.80);
+}
+h1{
+    color: #F60;
+    margin: 0.25em auto;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 5px 10px rgba(255,255,255,0.3)
+}
+#headerContainer{
+    margin: 0 auto;
+    width: 960px
+}
+#redesNav{
+    float: right
+}
+#redesNav #redes{    
+    float: right;
+}
+#redesNav a{    
+    float: left;
+    padding-left: 8px
+}
+
+#logo{
+    float: left;
+}
+
+img, section#principal, aside, h1{
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
+
+
+/* ---------->>>  Contenido <<<------------*/
+#parallax {
+
+    box-sizing: border-box;
+    border: #d1d1d1 1px solid;
+    border-top-right-radius:  5px;
+    border-bottom-right-radius:  5px;
+    top: 354px;
+    width: 55px;
+    padding: 10px 5px;
+    position: absolute;
+    height: 305px;
+    z-index: 998;
+}
+#banner,#bannerTodos {
+
+    width: 900px;
+    height: 250px;
+    margin: 30px auto
+}
+#bannerTodos {
+    margin-bottom: 300px  
+}
+section#contenedor{
+    margin:0.5em auto;
+    max-width: 960px;
+    padding: 0;
+    text-align: center;
+}
+section#principal{
+
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: -160px auto 0;
+    max-width: 960px;
+    min-height: 1000px;
+    padding: 0.25em;
+    text-align: center;
+    vertical-align: top;
+    width: 900px
+}
+article{
+
+    box-sizing:border-box;
+    border-radius: 0.3em;
+    border: #d1d1d1 1px solid;
+    margin: 0 auto;
+    padding: 0.9em;
+    width: 900px;
+    background-color: #EEE;
+}
+.integrantes{
+    border: rgb(255, 255, 255) 0px solid;
+    margin: 1.5em 0;
+    padding: 0;
+    text-align: initial;
+}
+figure, figcaption {
+    box-sizing:border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+figcaption {
+    padding: 1em 0.0em 1em 1.4em;
+}
+article img{
+    border-radius: 0.3em 0 0 0.3em;
+    width: 455px;
+}
+article p{   
+
+    font-size: 0.95em;
+    text-align: justify;
+    color: #555;
+    line-height: 1.2em;
+    margin: 0 auto;
+}
+h1{
+    border-bottom: #CCCCCC solid 1px;
+    color: #EB1F22;    
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px auto 40px;
+    padding: 10px 50px;
+    width: 350px;
+
+
+}
+#equipo{
+
+
+    overflow: auto;
+    padding: 10px 0 30px;
+    width: 900px;
+    min-width: 200px;
+    min-height: 130px;
+    margin: 30px auto 0;
+    background: #FFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.76);
+}
+#equipo li{
+    box-sizing:border-box;
+    background-color: #EEE;
+    float: left;
+    height: 165px;
+    width: 284px;
+    margin-left: 12.5px
+}
+footer{
+    background: #1b191a;
+    max-width: 100%;
+    text-align: center;
+    overflow: auto
+}
+#logoClientes {
+
+    width: 800px;
+    margin: 0 auto
+}
+#logoClientes li{
+
+    font-size: .8em;
+    color: #FFF;
+    float: left;
+    height: 40px;
+    width: 180px;
+    margin: 35px 43px 0;
+    border-bottom: 1px solid #404040;
+}
+#logoClientes li a{
+
+    color: #FFF;
+}
+#logoClientes li a:hover{
+
+    color: #F00;
+}
+
+#logoClientes span{
+
+
+    color: #EEE;
+    font-style: italic
+}
+#footer{
+    clear: both;
+    background-color: #191717;
+    max-width: 100%;
+    -webkit-box-shadow: inset 1px 1px 50px 10px #000000;
+    box-shadow: inset 1px 1px 50px 10px #000000;
+    margin-top: 100px;
+}
+#footer p{
+    color: white;
+    font-size: .8em;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+#menuFooter{
+    color: white;
+    clear: both;
+    border-top:solid #555 1px;
+    border-bottom: solid #555 1px;
+    border-style:solid;
+    box-sizing: border-box;
+    font-size: .8em;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 900px;
+    overflow: auto;
+    position: relative;
+    top: 30px;
+
+}
+#menuFooterUl{
+    margin: 0 auto;
+    width: 468px;
+    text-align: center;
+}
+#menuFooterUl li a{
+    color: #FFF;
+}
+#menuFooterUl li {
+    border-right:  1px groove #FFF;
+    padding: 0 8px
+}
+#menuFooterUl li:last-child
+{
+    border: none
+}
+
+
+/* ---------->>>  Media Queries <<<------------*/
+@media screen and (max-width: 480px){
+    h1{
+        color: #F00;
+        font-size: 1.5em;
+    }
+    section#principal, aside{
+        vertical-align: top;
+        width: 100%
+    }
+    img{
+        width: 200px;
+    }
+}
+
+

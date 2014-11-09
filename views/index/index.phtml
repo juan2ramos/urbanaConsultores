@@ -1,0 +1,75 @@
+
+<section id="contenedor">
+    <section id="principal">
+
+        <div id="banner">
+
+            <div id="slideshow">
+                <ul>
+
+                    <?
+                    $rLay = explode('/', $this->_rutaLayout);
+                    $layoutV = end($rLay);
+                    $ruta = 'views/layout/' . $layoutV . DS ;
+                    $r = $this->_rutaLayout . DS . 'img/slideHome' . DS;
+                    
+                    $imgsSlide = $this->incluirArchivos($r, 'img/slideHome',$ruta);
+                    $cantImg = count($imgsSlide);
+                    for ($i = 0; $i < $cantImg; $i++):
+                        ?> 
+                        <li>  
+                            <img src="<?php echo $imgsSlide[$i]; ?>" alt="" />
+                        </li>
+                        <?
+                    endfor;
+                    ?>
+                </ul>
+
+            </div>
+
+        </div>
+        <article>
+            <h1>
+                Nuestra Firma
+            </h1>
+            <p>
+                Reconocidos a lo largo de los a&ntilde;os de trabajo como una firma que 
+                ofrece servicios legales caracterizados por su alta calidad y sofisticaci&oacute;n.
+            </p> <br/>
+            <p>
+                Es una firma integral especializada en derecho de los negocios que con el fin
+                de ampliar sus servicios, se ali&oacute; en 2005 para atender adicionalmente los temas
+                concernientes a Propiedad Intelectual.
+            </p>
+            <p>
+                Hemos sido catalogada como una firma l&iacute;der por las publicaciones especializadas 
+                en derecho a nivel mundial. Contamos con un equipo de alta calidad, compuesto 
+                por abogados especializados y con estudios de muy alto nivel, muchos de ellos 
+                con estudios superiores en las m&eacute;s reconocidas universidades del mundo.
+            </p><br/>
+            <p>
+                Ofrecemos a nuestros clientes acompa&ntilde;amiento y asesor&iacute;a durante sus procesos 
+                mediante equiposde alto rendimiento especializados en todas las ramas de derecho 
+                que atendemos. 
+
+                Nuestros clientes aseguran el &eacute;xito de sus negocios gracias a nuestra experiencia 
+                eficaz y oportuna.
+
+                Desarrollamos una relaci&oacute;n con ellos basada en el profundo compromiso queasumimos 
+                mediante el cual adem&eacute;s de ser sus asesores legales, somos consejeros estrat&eacute;gicos 
+                augurando el &eacute;xito de sus transacciones.
+            </p>
+
+        </article>
+        <div id="equipo">
+            <ul>
+                <li><img src='<?php echo $_layoutParams['ruta_img']; ?>danielWeb.jpg' alt="Logo Urbana" width="284px"></li>
+                <li><img src='<?php echo $_layoutParams['ruta_img']; ?>crisWeb.jpg' alt="Logo Urbana" width="284px"></li>
+                <li><img src='<?php echo $_layoutParams['ruta_img']; ?>alvaroWeb.jpg' alt="Logo Urbana" width="284px"></li>
+
+            </ul>
+        </div>
+    </section>
+
+</section>
+
